@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const ExerciseCard = ({ exercise }) => {
   return (
     <Link to={`/exercise/${exercise.id}`} className="exercise-card">
-      <img src={exercise.gifUrl} alt={exercise.name} Loading="lazy" />
+      <img src={exercise.gifUrl} alt={exercise.name} loading="lazy" />
       <Stack direction="row">
         <Button
           sx={{
