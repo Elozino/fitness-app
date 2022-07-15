@@ -13,16 +13,23 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
         borderTop: bodyPart === item ? "4px solid #ff2625" : "",
         backgroundColor: "#fff",
         borderBottomLeftRadius: "20px",
-        width: "270px",
-        height: "280px",
+        width: "12rem",
+        height: "12rem",
         cursor: "pointer",
-        gap: "3rem",
+        gap: "1rem",
+      }}
+      onClick={() => {
+        setBodyPart(item)
+        window.scrollTo({ top: 1000, left: 100, behavior: "smooth" })
       }}
     >
       <img src={Icon} alt="dumbbell"
         //  className="body-part-icon"
-        styyle={{ width: "40px", height: "40px" }}
+        style={{ width: "5rem", height: "5rem" }}
       />
+      <Typography fontSize="24px" fontWeight="bold" color="#3a1212" textTransform="capitalize">
+        {item}
+      </Typography>
     </Stack>
   )
 }
