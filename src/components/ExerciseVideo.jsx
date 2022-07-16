@@ -7,12 +7,15 @@ const ExerciseVideo = ({ exerciseVideos, name }) => {
       sx={{ mt: { lg: "200px", xs: "20px" } }}
       p="20px"
     >
-      <Typography variant="h6" mb={3}>
+      <Typography variant="h4" mb={3} color="#fffafb">
         Watch <span style={{ color: "#ff2625", textTransform: "capitalize" }}>{name}</span> exercise videos
       </Typography>
-      <Stack justifyContent="flex-start" flexWrap="wrap" alignItems="center"
+      <Stack
+        justifyContent="space-between"
+        flexWrap="wrap"
+        alignItems="center"
         sx={{
-          flexDirection: { lg: "row" },
+          flexDirection: { lg: "row", sm: "row" },
           gap: { lg: "20px", xs: "0" }
         }}
       >

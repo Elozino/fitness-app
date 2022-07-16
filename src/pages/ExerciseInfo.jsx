@@ -5,6 +5,7 @@ import { exerciseOptions, fetchData, youtubeOptions } from "../utils/fetchData"
 import DetailsPage from '../components/DetailsPage'
 import ExerciseVideo from '../components/ExerciseVideo'
 import SimilarVideo from '../components/SimilarVideo'
+import Footer from '../components/Footer'
 
 const ExerciseInfo = () => {
   const { id } = useParams()
@@ -35,9 +36,10 @@ const ExerciseInfo = () => {
 
   return (
     <Box>
-      <DetailsPage exerciseDetail={exerciseDetail} key={id}/>
+      <DetailsPage exerciseDetail={exerciseDetail} key={id} />
       <ExerciseVideo exerciseVideos={exerciseVideos} name={exerciseDetail.name} />
-      <SimilarVideo targetMusclesExercise={targetMusclesExercise} equipmentExercise={equipmentExercise}/>
+      <SimilarVideo targetMusclesExercise={targetMusclesExercise} equipmentExercise={equipmentExercise} />
+      <Footer />
     </Box>
   )
 }

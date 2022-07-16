@@ -10,7 +10,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
 
   const paginate = (e, value) => {
     setCurrentPage(value)
-    window.scrollTo({ top: 1800, behavior: "smooth" })
+    window.scrollTo({ top: 1500, behavior: "smooth" })
   }
 
   const indexOfLastExercise = currentPage * exercisesPerPage
@@ -38,15 +38,15 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
         mt: { lg: "110px" }
       }}
       mt="50px"
-      p="20px"
+      p="30px"
     >
-      <Typography variant="h4" pl={4} mb="46px">Showing Results</Typography>
+      <Typography variant="h4" pl={4} mb="46px" color="#fffafb">Showing Results</Typography>
       <Stack
         direction="row"
         flexWrap="wrap"
         justifyContent="center"
         sx={{
-          gap: { lg: "110px", xs: "50px" }
+          gap: { lg: "50px", xs: "50px" }
         }}
       >
         {currentExercise.map((exercise, index) => (
@@ -56,6 +56,9 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
       <Stack mt="100px" alignItems="center">
         {exercises.length > 9 && (
           <Pagination
+            sx={{
+              "& .MuiPaginationItem-root": { color: "#fffafb" },
+            }}
             color="standard"
             shape="rounded"
             default="1"

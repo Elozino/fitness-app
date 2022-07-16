@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Typography, Button } from '@mui/material'
-import HeroBannerImage from "../assets/images/banner.png"
+import HeroBannerImage from "../assets/images/banner.jpg"
 
 const HeroBanner = () => {
   return (
@@ -19,12 +19,13 @@ const HeroBanner = () => {
       </Typography>
       <Typography fontWeight={700}
         sx={{
-          fontSize: { lg: "44px", xs: "40px", }
+          fontSize: { lg: "44px", xs: "40px", },
+          color: "#fffafb"
         }}
       >
         Sweat, Smile <br /> and Repeat
       </Typography>
-      <Typography fontSize="22px" lineHeight="35px" mb={3}>
+      <Typography fontSize="22px" lineHeight="35px" mb={3} color="#fffafb">
         Check out the most effective exercises
       </Typography>
       <Button variant="contained" color="error"
@@ -36,7 +37,7 @@ const HeroBanner = () => {
       <Typography
         fontWeight="600"
         fontSize="12rem"
-        color="#ff2625"
+        color="#fffafb"
         sx={{
           opacity: 0.1,
           display: { lg: "block", xs: "none" }

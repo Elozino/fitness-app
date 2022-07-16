@@ -32,12 +32,12 @@ const NavBar = () => {
         alignItems="flex-end"
       >
         <Link to="/"
-          style={{ textDecoration: "none", color: "#3a1212", borderBottom: "3px solid #ff2625" }}
+          style={{ textDecoration: "none", color: "#fffafb", borderBottom: "3px solid #ff2625" }}
         >
           Home
         </Link>
         <a href="#exercises"
-          style={{ textDecoration: "none", color: "#3a1212" }}
+          style={{ textDecoration: "none", color: "#fffafb" }}
         >
           Exercises
         </a>

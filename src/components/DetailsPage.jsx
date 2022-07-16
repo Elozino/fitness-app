@@ -28,10 +28,10 @@ const DetailsPage = ({ exerciseDetail }) => {
     >
       <img src={gifUrl} alt={name} loading="lazy" className="detail-image" />
       <Stack sx={{ gap: { lg: "35px", xs: "20px" } }}>
-        <Typography variant="h4">
+        <Typography variant="h4" color="#fffafb">
           {name}
         </Typography>
-        <Typography variant="h6">
+        <Typography variant="h6" color="#fffafb">
           Exercise keeps you strong. {name}
           is one of the best exercises to target your {target}.
           It will help you improve your mood and gain energy.
@@ -53,7 +53,7 @@ const DetailsPage = ({ exerciseDetail }) => {
               }}
               />
             </Button>
-            <Typography variant="h6" textTransform="capitalize">
+            <Typography variant="h6" textTransform="capitalize" color="#fffafb">
               {item.name}
             </Typography>
           </Stack>
